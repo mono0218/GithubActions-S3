@@ -9,7 +9,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-        
+
+      - name: Delete File
+        run: | 
+        rm -rf .git/ .github/ LICENSE
+
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
