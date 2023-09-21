@@ -12,7 +12,7 @@ jobs:
 
       - name: Delete File
         run: | 
-        rm -rf .git/ .github/ LICENSE
+          rm -rf .git/ .github/ LICENSE
 
       - name: Deploy
         env:
